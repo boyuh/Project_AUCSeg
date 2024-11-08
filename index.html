@@ -180,7 +180,7 @@
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-2">Abstract</h2>
+          <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p style="font-size: 1.2em;">
               The Area Under the ROC Curve (AUC) is a well-known metric for evaluating instance-level long-tail learning problems. In the past two decades, many AUC optimization methods have been proposed to improve model performance under long-tail distributions. In this paper, we explore AUC optimization methods in the context of pixel-level long-tail semantic segmentation, a much more complicated scenario. This task introduces two major challenges for AUC optimization techniques. On one hand, AUC optimization in a pixel-level task involves complex coupling across loss terms, with structured inner-image and pairwise inter-image dependencies, complicating theoretical analysis. On the other hand, we find that mini-batch estimation of AUC loss in this case requires a larger batch size, resulting in an unaffordable space complexity. To address these issues, we develop a pixel-level AUC loss function and conduct a dependency-graph-based theoretical analysis of the algorithm's generalization ability. Additionally, we design a Tail-Classes Memory Bank (T-Memory Bank) to manage the significant memory demand. Finally, comprehensive experiments across various benchmarks confirm the effectiveness of our proposed AUCSeg method.
@@ -192,48 +192,16 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <img id="teaser" width="100%" src="./images/examples.png" alt="Examples of Multi-object Saliency Detection." />
+        <img id="teaser" width="100%" src="./images/overview.png" alt="An overview of AUCSeg." />
         <h2 class="subtitle has-text-centered">
-          <span class="methodname">SI-SOD</span> considers objects in different sizes.
+          <span class="methodname">An overview of AUCSeg.
         </h2>
       </div>
     </div>
   </section>
 
 
-  <section class="section pt-0">
-    <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Overview</h2>
-          <div class="content has-text-justified">
-            <p>
-              We observe that current metrics are size-sensitive, where larger objects are focused, and smaller ones
-              tend to be ignored.
-              The evaluation should be size-invariant because bias based on size is unjustified without additional
-              semantic information.
-              We therefore introduce <span class="methodname">SI-SOD</span>, namely size-invariant salient object
-              detection.
-              It evaluates each salient object separately and then combines the results, effectively alleviating the
-              imbalance.
-              We further develop an optimization framework tailored to this goal, achieving considerable improvements in
-              detecting objects of different sizes.
-            </p>
-
-            <p>
-              The gallery below presents several images from the datasets and a comparison of <span
-                class="methodname">SI-SOD</span> with the previous
-              state-of-the-art methods. Use the slider and gestures to reveal details on both sides.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!--/ Abstract. -->
-    </div>
-  </section>
-
-
+  
   <section class="hero is-light is-small">
     <div class="hero-body">
       <div class="container">
@@ -394,18 +362,18 @@
           <div class="twoitem">
             <div class="twentytwenty-container twentytwenty-container-top">
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/0466.png">
+                <img src="./images/AUCSeg/08_image.png">
               </div>
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/0466_Ours.png">
+                <img src="./images/AUCSeg/08_aucseg.png">
               </div>
             </div>
             <div class="twentytwenty-container twentytwenty-container-bottom">
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/0466_Origin.png">
+                <img src="./images/AUCSeg/08_deeplabv3+.png">
               </div>
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/0466_Ours.png">
+                <img src="./images/AUCSeg/08_aucseg.png">
               </div>
             </div>
           </div>
@@ -413,18 +381,18 @@
           <div class="twoitem">
             <div class="twentytwenty-container twentytwenty-container-top">
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/1033.png">
+                <img src="./images/AUCSeg/09_image.png">
               </div>
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/1033_Ours.png">
+                <img src="./images/AUCSeg/09_aucseg.png">
               </div>
             </div>
             <div class="twentytwenty-container twentytwenty-container-bottom">
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/1033_Origin.png">
+                <img src="./images/AUCSeg/09_deeplabv3+.png">
               </div>
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/1033_Ours.png">
+                <img src="./images/AUCSeg/09_aucseg.png">
               </div>
             </div>
           </div>
@@ -432,18 +400,18 @@
           <div class="twoitem">
             <div class="twentytwenty-container twentytwenty-container-top">
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2076.png">
+                <img src="./images/AUCSeg/10_image.png">
               </div>
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2076_Ours.png">
+                <img src="./images/AUCSeg/10_aucseg.png">
               </div>
             </div>
             <div class="twentytwenty-container twentytwenty-container-bottom">
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2076_Origin.png">
+                <img src="./images/AUCSeg/10_deeplabv3+.png">
               </div>
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2076_Ours.png">
+                <img src="./images/AUCSeg/10_aucseg.png">
               </div>
             </div>
           </div>
@@ -451,18 +419,18 @@
           <div class="twoitem">
             <div class="twentytwenty-container twentytwenty-container-top">
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2177.png">
+                <img src="./images/AUCSeg/11_image.png">
               </div>
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2177_Ours.png">
+                <img src="./images/AUCSeg/11_aucseg.png">
               </div>
             </div>
             <div class="twentytwenty-container twentytwenty-container-bottom">
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2177_Origin.png">
+                <img src="./images/AUCSeg/11_deeplabv3+.png">
               </div>
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2177_Ours.png">
+                <img src="./images/AUCSeg/11_aucseg.png">
               </div>
             </div>
           </div>
@@ -470,18 +438,18 @@
           <div class="twoitem">
             <div class="twentytwenty-container twentytwenty-container-top">
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2196.png">
+                <img src="./images/AUCSeg/12_image.png">
               </div>
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2196_Ours.png">
+                <img src="./images/AUCSeg/12_aucseg.png">
               </div>
             </div>
             <div class="twentytwenty-container twentytwenty-container-bottom">
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2196_Origin.png">
+                <img src="./images/AUCSeg/12_deeplabv3+.png">
               </div>
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2196_Ours.png">
+                <img src="./images/AUCSeg/12_aucseg.png">
               </div>
             </div>
           </div>
@@ -489,18 +457,18 @@
           <div class="twoitem">
             <div class="twentytwenty-container twentytwenty-container-top">
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2318.png">
+                <img src="./images/AUCSeg/13_image.png">
               </div>
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2318_Ours.png">
+                <img src="./images/AUCSeg/13_aucseg.png">
               </div>
             </div>
             <div class="twentytwenty-container twentytwenty-container-bottom">
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2318_Origin.png">
+                <img src="./images/AUCSeg/13_deeplabv3+.png">
               </div>
               <div class="cmpcontent">
-                <img src="./images/MSOD/new/2318_Ours.png">
+                <img src="./images/AUCSeg/13_aucseg.png">
               </div>
             </div>
           </div>
@@ -641,12 +609,12 @@
   <section class="section pt-0" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">Citation</h2>
-      <pre class="selectable"><code>@inproceedings{li2024sizeinvariance,
-        title={Size-invariance Matters: Rethinking Metrics and Losses for Imbalanced Multi-object Salient Object Detection}, 
-        author={Feiran Li and Qianqian Xu and Shilong Bao and Zhiyong Yang and Runmin Cong and Xiaochun Cao and Qingming Huang},
-        booktitle={The Forty-first International Conference on Machine Learning},
+      <pre class="selectable"><code>@inproceedings{han2024aucseg,
+        title={AUCSeg: AUC-oriented Pixel-level Long-tail Semantic Segmentation}, 
+        author={Boyu Han and Qianqian Xu and Zhiyong Yang and Shilong Bao and Peisong Wen and Yangbangyan Jiang and Qingming Huang},
+        booktitle={Advances in Neural Information Processing Systems},
         year={2024}
-        }
+    }
 }</code></pre>
     </div>
   </section>
