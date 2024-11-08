@@ -4,18 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-    content="Size-invariance Matters: Rethinking Metrics and Losses for Imbalanced Multi-object Salient Object Detection">
-  <meta name="keywords" content="saliency, size-invariance">
+    content="AUCSeg: AUC-oriented Pixel-level Long-tail Semantic Segmentation">
+  <meta name="keywords" content="AUCSeg, AUC, Semantic Segmentation, Long-tail">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image:src" content="http://marigoldmonodepth.github.io/images/marigold_logo_square.jpg">
-  <meta name="twitter:title" content="Size-invariance Matters">
+  <meta name="twitter:title" content="AUCSeg">
   <meta name="twitter:description"
-    content="Size-invariance Matters: Rethinking Metrics and Losses for Imbalanced Multi-object Salient Object Detection">
+    content="AUCSeg: AUC-oriented Pixel-level Long-tail Semantic Segmentation">
   <meta name="twitter:creator" content="@AntonObukhov1">
 
-  <title>Size-invariance Matters: Rethinking Metrics and Losses for Imbalanced Multi-object Salient Object Detection
+  <title>AUCSeg: AUC-oriented Pixel-level Long-tail Semantic Segmentation
   </title>
 
   <!-- Google tag (gtag.js) -->
@@ -71,56 +71,53 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Size-invariance Matters: Rethinking Metrics and Losses for
-              Imbalanced Multi-object Salient Object Detection</h1>
-            <h3 class="title has-text-centered">ICML 2024</h3>
+            <h1 class="title is-1 publication-title">AUCSeg: AUC-oriented Pixel-level Long-tail Semantic Segmentation</h1>
+            <h3 class="title has-text-centered">NeurIPS 2024</h3>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?hl=zh-CN&user=vPStt7cAAAAJ" target="_blank"
+                <a href="https://boyuh.github.io/" target="_blank"
                   rel="noopener noreferrer">
-                  Feiran Li</a>,
+                  Boyu Han</a><sup>1,2</sup>,
               </span>
               <span class="author-block">
                 <a href="https://qianqianxu010.github.io/" target="_blank" rel="noopener noreferrer">
-                  Qianqian Xu</a>,
-              </span>
-              <span class="author-block">
-                <a href="https://statusrank.github.io/" target="_blank" rel="noopener noreferrer">
-                  Shilong Bao</a>,
+                  Qianqian Xu</a><sup>1,3<b>*</b></sup>,
               </span>
               <span class="author-block">
                 <a href="https://joshuaas.github.io/" target="_blank" rel="noopener noreferrer">
-                  Zhiyong Yang</a>,
+                  Zhiyong Yang</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://rmcong.github.io/" target="_blank" rel="noopener noreferrer">
-                  Runmin Cong</a>,
+                <a href="https://statusrank.github.io/" target="_blank" rel="noopener noreferrer">
+                  Shilong Bao</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://scst.sysu.edu.cn/members/1401493.htm" target="_blank" rel="noopener noreferrer">
-                  Xiaochun Cao</a>,
+                <a href="https://scholar.google.com/citations?user=Zk2XLWYAAAAJ&hl=zh-CN&oi=ao" target="_blank" rel="noopener noreferrer">
+                  Peisong Wen</a><sup>1,2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://people.ucas.ac.cn/~qmhuang" target="_blank" rel="noopener noreferrer">
-                  Qingming Huang</a>
+                <a href="https://jiangyangby.github.io/" target="_blank" rel="noopener noreferrer">
+                  Yangbangyan Jiang</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://qmhuang-ucas.github.io/" target="_blank" rel="noopener noreferrer">
+                  Qingming Huang</a><sup>2,1,4<b>*</b></sup>
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Insititute of Information Engineering, CAS</span>
-              <span class="author-block">Key Laboratory of Intelligent Information Processing, Institute of Computing
-                Technology, CAS</span>
-              <span class="author-block">School of Computer Science and Technology, UCAS</span>
-              <span class="author-block">School of Control Science and Engineering, Shandong University</span>
-              <span class="author-block">School of CyberScience and Tech., Shenzhen Campus, Sun Yat-sen
-                University</span>
+              <span class="author-block"><sup>1</sup> Key Lab. of Intelligent Information Processing, Institute of Computing Technology, CAS</span>
+              <span class="author-block"><sup>2</sup> School of Computer Science and Tech., University of Chinese Academy of Sciences</span>
+              <span class="author-block"><sup>3</sup> Peng Cheng Laboratory</span>
+              <span class="author-block"><sup>4</sup> Key Laboratory of Big Data Mining and Knowledge Management, CAS</span>
+              <span class="author-block"><sup><b>*</b></sup> Equal contribution</span>
 
             </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2405.09782" target="_blank" rel="noopener noreferrer"
+                  <a href="https://arxiv.org/abs/2409.20398" target="_blank" rel="noopener noreferrer"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf" style="color: orangered"></i>
@@ -130,7 +127,7 @@
                 </span>
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/Ferry-Li/SI-SOD" target="_blank" rel="noopener noreferrer"
+                  <a href="https://github.com/boyuh/AUCSeg" target="_blank" rel="noopener noreferrer"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -138,6 +135,16 @@
                     <span>Code</span>
                   </a>
                 </span>
+                <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://github.com/boyuh/AUCSeg"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
                 <!-- Colab Link. 
                 <span class="link-block">
                   <a href="https://colab.research.google.com/drive/12G8reD13DdpMie5ZQlaFNo2WCGeNUH-u?usp=sharing"
@@ -167,6 +174,20 @@
       </div>
     </div>
   </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-2">Abstract</h2>
+          <div class="content has-text-justified">
+            <p style="font-size: 1.2em;">
+              The Area Under the ROC Curve (AUC) is a well-known metric for evaluating instance-level long-tail learning problems. In the past two decades, many AUC optimization methods have been proposed to improve model performance under long-tail distributions. In this paper, we explore AUC optimization methods in the context of pixel-level long-tail semantic segmentation, a much more complicated scenario. This task introduces two major challenges for AUC optimization techniques. On one hand, AUC optimization in a pixel-level task involves complex coupling across loss terms, with structured inner-image and pairwise inter-image dependencies, complicating theoretical analysis. On the other hand, we find that mini-batch estimation of AUC loss in this case requires a larger batch size, resulting in an unaffordable space complexity. To address these issues, we develop a pixel-level AUC loss function and conduct a dependency-graph-based theoretical analysis of the algorithm's generalization ability. Additionally, we design a Tail-Classes Memory Bank (T-Memory Bank) to manage the significant memory demand. Finally, comprehensive experiments across various benchmarks confirm the effectiveness of our proposed AUCSeg method.
+            </p>
+          </div>
+        </div>
+      </div>
 
   <section class="hero teaser">
     <div class="container is-max-desktop">
