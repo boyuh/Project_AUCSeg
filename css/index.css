@@ -160,3 +160,11 @@ body {
     -ms-user-select: all; /* Internet Explorer/Edge */
     user-select: all; /* Chrome and Opera */
 }
+
+.tab-content .tab-pane {
+  display: none;
+}
+
+.tab-content .tab-pane.is-active {
+  display: block;
+}
